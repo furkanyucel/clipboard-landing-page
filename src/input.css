@@ -1,0 +1,189 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* background image */
+.bgImg {
+  @apply absolute top-0 left-0 w-full;
+}
+
+@layer components {
+  /* container */
+  .container {
+    @apply grid place-items-center mx-auto mt-12;
+  }
+
+  /************************** header **************************/
+
+  .header {}
+
+	.header__logo { @apply w-24 }
+
+  .header__contents {
+    @apply mt-6 mx-auto text-center text-slate-600 sm:w-8/12;
+  }
+  .header__title {
+    @apply pt-8 text-4xl;
+  }
+  .header__content {
+    @apply pt-4 text-base text-slate-300;
+  }
+
+  .header__buttons {
+    @apply mt-8 md:flex;
+  }
+  .btnIos {
+    @apply mx-1.5 mt-4 rounded-full bg-green-500 py-2.5 px-6 text-white hover:bg-green-600;
+  }
+  .btnMac {
+    @apply mx-1.5 mt-4 rounded-full bg-blue-500 py-2.5 px-6 text-white hover:bg-blue-600;
+  }
+
+  /************************** snippets **************************/
+
+  .snippets {
+    @apply mt-16 grid place-items-center;
+  }
+  .snippets__title {
+    @apply text-center text-3xl text-slate-600;
+  }
+  .snippets__content {
+    @apply text-center w-6/12 pt-4 text-slate-300;
+  }
+  .snippets__main {
+    @apply mt-20 md:flex;
+  }
+  .snippets__img {
+    @apply w-full md:-ml-64;
+  }
+  .snippets__cards {
+    @apply md:ml-24 w-1/2 mx-auto text-center md:text-left;
+  }
+  .snippets__card-1,
+  .snippets__card-2,
+  .snippets__card-3 {
+    @apply mt-12 w-80;
+  }
+
+  .snippets__cards-title {
+    @apply font-medium text-slate-600;
+  }
+
+  .snippets__cards-content {
+    @apply mt-2 text-slate-300 leading-6 text-xs w-72;
+  }
+
+  /************************** clipboard **************************/
+
+  .clipboard {
+    @apply mt-24 grid place-items-center text-center;
+  }
+  .clipboard__title {
+    @apply text-3xl text-slate-600;
+  }
+  .clipboard__content {
+    @apply mb-16 w-8/12 pt-8 text-slate-300;
+  }
+
+  .clipboard__img {}
+
+  /************************** workflow **************************/
+
+  .workflow {
+    @apply mt-8 grid place-items-center text-center;
+  }
+  .workflow__title {
+    @apply text-3xl text-slate-600;
+  }
+  .workflow__content {
+    @apply mt-4 w-6/12 text-slate-300;
+  }
+  .workflow__cards {
+    @apply flex-col md:flex-row mx-auto mt-6 text-center text-slate-400;
+  }
+  .workflow__cards-card1 {
+    @apply flex-col justify-center w-2/6;
+  }
+  .workflow__cards-card2 {
+    @apply my-16 md:my-0 mx-8 flex-col justify-center w-2/6;
+  }
+  .workflow__cards-card3 {
+    @apply flex-col justify-center w-2/6;
+  }
+
+  .workflow__cards-img {
+    @apply w-2/12 mx-auto;
+  }
+  .workflow__cards-title {
+    @apply mt-8 font-medium text-slate-600;
+  }
+  .workflow__cards-content {
+    @apply mx-auto mt-4 text-slate-300 text-xs;
+  }
+
+  /************************** brands **************************/
+
+  .brands {
+    @apply my-32 md:flex justify-between;
+  }
+  .brands img {
+    @apply mt-16 md:mt-0 h-8 mx-auto md:mx-10;
+  }
+
+  /************************** ios macos **************************/
+
+  .iosMacos {
+    @apply mt-8 grid place-items-center text-center;
+  }
+  .iosMacos__title {
+    @apply text-3xl text-slate-600;
+  }
+  .iosMacos__content {
+    @apply mt-4 w-4/6 text-slate-300;
+  }
+
+  .iosMacos__buttons {
+    @apply mt-8 md:flex;
+  }
+
+  .btnIos {
+  }
+
+  .btnMac {
+  }
+
+  /************************** footer **************************/
+
+  .footer {
+    @apply mt-32 md:flex items-center justify-between bg-slate-100 py-10 px-32;
+  }
+
+  .footer__logo {
+    @apply md:w-1/12;
+  }
+
+	.footer__logo img { @apply mx-auto md:mx-0 w-16 md:w-10 }
+
+  .footer__nav {
+    @apply mx-auto md:mx-0 flex w-8/12 justify-center md:justify-start  flex-wrap;
+  }
+
+  .footer__list {
+    @apply mt-8 md:mt-0 mx-10 text-lg md:text-sm text-slate-400;
+  }
+
+  .footer__link {
+    @apply w-64;
+  }
+
+  .footer__social {
+    @apply flex justify-center md:justify-end mt-16 md:mt-0 mx-auto md:mx-0 w-6/12 md:w-2/12;
+  }
+
+  .footer__social-icon {
+    @apply mx-2.5;
+  }
+
+	.footer__social-icon img { @apply w-5 }
+
+}
